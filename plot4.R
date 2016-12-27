@@ -1,5 +1,5 @@
 ##plot4
-png(filename="//Users/RuijianWang/Desktop/plot4.png", height=480, width=480,bg="white")
+png(filename="./Desktop/plot4.png", height=480, width=480,bg="white")
 par(mfrow=c(2,2))
 #graph1
 Global_active_power = as.numeric(newData$Global_active_power)
