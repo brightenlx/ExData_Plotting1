@@ -6,7 +6,7 @@ Sub_metering_3 = as.numeric(newData$Sub_metering_3)
 datetime <- paste(as.Date(newData$Date,"%d/%m/%Y"), newData$Time)
 newData$datetime <- as.POSIXct(datetime)
 
-png(filename="//Users/RuijianWang/Desktop/plot3.png", height=480, width=480,bg="white")
+png(filename="./Desktop/plot3.png", height=480, width=480,bg="white")
 with(newData, {
   plot(datetime, Sub_metering_1,type = "l",xlab='',ylab='Energy Sub Metering',col="black")
   lines(datetime, Sub_metering_2,col="red")
